@@ -9,6 +9,13 @@ const https = require('https')
 const fs = reqire('fs')
 const dir = require('os').homedir()
 
+const options = {
+  key: fs.readFileSync( `${dir}/ssl/localhost/localhost.key` ),
+  cert: fs.readFileSync( `${dir}/ssl/localhost/localhost.crt` ),
+  requestCert: false,
+  rejectUnauthorized: false
+}
+
 app.use(volleyball)
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded())
