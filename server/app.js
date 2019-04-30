@@ -16,6 +16,8 @@ const options = {
   rejectUnauthorized: false
 }
 
+const server = https.createServer(options, app)
+
 app.use(volleyball)
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded())
