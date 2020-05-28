@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack --mode development -w & nodemon server/app.js --ignore /client --ignore /public",
+    "start": "node server/app.js",
+    "build": "webpack --mode production",
+    "start-dev": "webpack --mode development -w & nodemon server/app.js --ignore /client --ignore /public",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
