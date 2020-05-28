@@ -9,12 +9,17 @@ const https = require('https')
 const fs = require('fs')
 const dir = require('os').homedir()
 
-const options = {
-  key: fs.readFileSync( `${dir}/ssl/localhost/localhost.key` ),
-  cert: fs.readFileSync( `${dir}/ssl/localhost/localhost.crt` ),
-  requestCert: false,
-  rejectUnauthorized: false
-}
+let options;
+
+!process.env.PORT ?
+    options = {
+      key: fs.readFileSync( `${dir}/ssl/localhost/localhost.key` ),
+      cert: fs.readFileSync( `${dir}/ssl/localhost/localhost.crt` ),
+      requestCert: false,
+      rejectUnauthorized: false
+    }
+  :
+    options = {}
 
 const server = https.createServer(options, app)
 
