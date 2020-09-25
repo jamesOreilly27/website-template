@@ -1,14 +1,22 @@
 import React from 'react'
+import styled from 'styled-components'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import Dance from './components/Dance'
+import { LandingPage, Navbar } from './components'
+
+const Wrapper = styled.div`
+
+`
 
 const Main = () => {
   return (
-    <Router>
-      <Switch>
-        <Route exact path='/dance' component={Dance} />
-      </Switch>
-    </Router>
+      <Router>
+        <Wrapper>
+          <Navbar />
+          <Switch>
+            <Route exact path='/' component={LandingPage} />
+          </Switch>
+        </Wrapper>
+      </Router>
     )
 }
 
