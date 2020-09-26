@@ -48,7 +48,7 @@ const Orange = styled.div`
 `
 
 const BlueContainer = styled.div`
-  width: 80%;
+  width: 85%;
   height: 100%;
   background-image: linear-gradient(to top, #155C9A, #4787BA);
   display: flex;
