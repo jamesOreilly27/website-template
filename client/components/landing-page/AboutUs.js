@@ -14,6 +14,7 @@ const Title = styled.h1`
   font-weight: 800;
   color: #0D4474;
   margin-bottom: 5px;
+  font-size: 40px;
 `
 
 const Underline = styled.div`
