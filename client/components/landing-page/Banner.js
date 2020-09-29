@@ -58,7 +58,7 @@ const ContentContainer = styled.div`
 
 const BannerImageContainer = styled.div`
   width: 55%;
-  height: 75%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -66,6 +66,7 @@ const BannerImageContainer = styled.div`
 
 const Image = styled.img`
   width: 90%;
+  height: 500px;
 `
 
 const Blurb = styled.div`
@@ -112,7 +113,7 @@ const SVGContainer = styled.div`
 `
 
 const Bottom = styled(ReactSVG)`
-  margin-top: 530px;
+  margin-top: 533px;
   overflow-x: hidden;
 `
 
