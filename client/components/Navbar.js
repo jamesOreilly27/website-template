@@ -1,8 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Navlink } from '../components'
-
-const links = ['About Us', 'Services', 'Portfolio', 'Contact Us']
+import { links } from './helpers'
 
 const Wrapper = styled.div`
   width: 100vw;
