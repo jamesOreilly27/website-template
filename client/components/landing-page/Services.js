@@ -16,11 +16,13 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-start;
+  margin-top: 50px;
 `
 
 const SVGContainer = styled.div`
-  width: 120%;
-  margin-bottom: -5px;
+  width: 110%;
+  margin-bottom: -18px;
 `
 
 const Top = styled(ReactSVG)`
@@ -63,7 +65,7 @@ const ServicesContainer = styled.div`
 const Services = () => (
   <Wrapper>
     <SVGContainer>
-      <Top src="/assets/orange-curve.svg"/>
+      <Top src="/assets/orange-curve.svg" />
     </SVGContainer>
     <ContentContainer>
       <Header> Services </Header>

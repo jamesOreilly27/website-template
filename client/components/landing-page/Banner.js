@@ -120,26 +120,26 @@ const Bottom = styled(ReactSVG)`
 const Banner = () => (
   <Wrapper>
     <OrangeStrip />
-      <ContentContainer>
-        <BannerImageContainer>
-          <Image src="/assets/efficiency.png" />
-        </BannerImageContainer>
-        <Blurb>
-          <BannerHeader>
-            SERVING SOLUTIONS
+    <ContentContainer>
+      <BannerImageContainer>
+        <Image src="/assets/efficiency.png" />
+      </BannerImageContainer>
+      <Blurb>
+        <BannerHeader>
+          SERVING SOLUTIONS
           </BannerHeader>
-          <Underline />
-          <BannerText>
-            This is a paragraph. Let's see how it looks and maybe think a tiny bit about hat it should say later. Cheers.
-          </BannerText>
-          <Button>
-            Read More
+        <Underline />
+        <BannerText>
+          This is a paragraph. Let's see how it looks and maybe think a tiny bit about hat it should say later. Cheers.
+        </BannerText>
+        <Button>
+          Read More
           </Button>
-        </Blurb>
-      </ContentContainer>
-      <SVGContainer>
-        <Bottom src="/assets/testing.svg" />
-      </SVGContainer>
+      </Blurb>
+    </ContentContainer>
+    <SVGContainer>
+      <Bottom src="/assets/testing.svg" />
+    </SVGContainer>
   </Wrapper>
 )
 

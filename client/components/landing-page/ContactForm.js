@@ -3,12 +3,15 @@ import styled from 'styled-components'
 
 const Wrapper = styled.form`
   display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `
 
 const InputsContainer = styled.div`
-  
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
 `
 
 const LeftFields = styled.div`
@@ -62,19 +65,41 @@ const TextArea = styled.textarea`
   font-family: Montserrat, sans-serif;
 `
 
+const SubmitButton = styled.button`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  height: 20px;
+  padding: 13px 0;
+  margin-top: 30px;
+  border: none;
+  background-image: linear-gradient(to right, #CA5821, #D27200);
+  color: #F8F8FF;
+  border-radius: 10px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+`
+
 const ContactForm = () => (
-  <Wrapper>
-    <LeftFields>
-      <Row>
-        <HalfInput name="first" placeholder="First Name"></HalfInput>
-        <HalfInput name="last" placeholder="Last Name"></HalfInput>
-      </Row>
-      <Input name="phone" placeholder="Phone Number" />
-      <Input name="email" placeholder="Email" />
-    </LeftFields>
-    <RightFields>
-      <TextArea name="details" placeholder="Tell us about your project..." />
-    </RightFields>
+  <Wrapper method="post" action="mailto:james.oreilly926@gmail.com">
+    <InputsContainer>
+      <LeftFields>
+        <Row>
+          <HalfInput name="first" placeholder="First Name"></HalfInput>
+          <HalfInput name="last" placeholder="Last Name"></HalfInput>
+        </Row>
+        <Input name="phone" placeholder="Phone Number" />
+        <Input name="email" placeholder="Email" />
+      </LeftFields>
+      <RightFields>
+        <TextArea name="details" placeholder="Tell us about your project..." />
+      </RightFields>
+    </InputsContainer>
+    <SubmitButton type="submit">
+      Send
+    </SubmitButton>
   </Wrapper>
 )
 
