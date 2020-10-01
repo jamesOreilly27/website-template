@@ -7,7 +7,7 @@ const Wrapper = styled.div`
 `
 
 const LandingPage = () => (
-  <Wrapper>
+  <Wrapper id="test">
     <Banner />
     <AboutUs />
     <Services />

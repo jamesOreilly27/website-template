@@ -13,15 +13,17 @@ const nameToUrl = name => {
   return url.toLowerCase()
 }
 
-const Wrapper = styled(Link)`
+const Wrapper = styled.div`
   font-family: 'Montserrat', sans-serif;
-  text-decoration: none;
   color: #F8F8FF;
+  cursor: pointer;
 `
 
-const Navlink = ({ name }) => (
-  <Wrapper to={`${nameToUrl(name)}`}>
-    {name}
+const Navlink = ({ link }) => (
+  <Wrapper onClick={() => {
+    window.scroll(0, link.scrollY)
+  }}>
+    {link.name}
   </Wrapper>
 )
 

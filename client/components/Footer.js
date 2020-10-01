@@ -81,7 +81,7 @@ const Footer = () => (
       <NavContainer>
         {links.map(link => (
           <NavLink>
-            {link}
+            {link.name}
           </NavLink>
         ))}
       </NavContainer>

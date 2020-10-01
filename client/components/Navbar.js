@@ -70,7 +70,7 @@ const Navbar = () => (
     <Orange> </Orange>
     <BlueContainer>
       <LinksContainer>
-        {links.map(link => <Navlink key={link} name={link} /> )}
+        {links.map(link => <Navlink key={link.name} link={link} /> )}
       </LinksContainer>
     </BlueContainer>
   </Wrapper>
